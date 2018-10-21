@@ -35,4 +35,6 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
     compile 'com.google.code.gson:gson:2.2.4'//gson 包
     compile 'com.jakewharton:butterknife:7.0.1' //butter knife 包
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'//加载图片
+
 }

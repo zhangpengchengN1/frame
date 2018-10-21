@@ -5,5 +5,6 @@ package com.example.pengcheng.frame.conf;
  */
 public class Property {
 
-    public static String APP_URL="";//程序的主路径
+    public static final String SP_NAME="";//本地存储的数据名
+    public static final String APP_URL="";//程序的主路径
 }

@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mo_scanner_bg">
+
+    <SurfaceView
+        android:id="@+id/mo_scanner_preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/mo_scanner_bg" />
+
+    <com.example.pengcheng.frame.qrcode.Zxing.view.ViewfinderView
+        android:id="@+id/mo_scanner_viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/mo_scanner_bg" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mo_scanner_back"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:src="@mipmap/mo_scanner_back_img" />
+
+        <ImageView
+
+            android:id="@+id/mo_scanner_photo"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:src="@mipmap/mo_scanner_album" />
+
+        <ImageView
+
+            android:id="@+id/mo_scanner_light"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:src="@mipmap/mo_scanner_light_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:gravity="center_horizontal"
+            android:text="二维码 、条形码扫描"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <ImageView
+            android:src="@mipmap/scan_line"
+            android:id="@+id/capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</FrameLayout>
